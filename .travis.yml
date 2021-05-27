@@ -2,7 +2,7 @@ sudo: required
 Services: 
   -docker
 before_install:
-  - docker build -t mansinghkachhi/docker-react -f Docker.dev .
+  - docker build -t mansinghkachhi/docker-react -f Dockerfile.dev .
 script:
   - docker run -e CI=true mansinghkachhi/docker-react
   
